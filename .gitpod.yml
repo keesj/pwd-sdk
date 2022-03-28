@@ -1,0 +1,5 @@
+ports:
+   - port: 8080
+tasks:
+  - init: yarn install
+    command: yarn run build && node test-server.js
