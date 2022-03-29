@@ -88,3 +88,7 @@ export default () => {
 Requires an installation of [`yarn`](https://yarnpkg.com/).
 
 Clone this repo and run `yarn install && yarn run build`
+
+## Test
+
+Testing
