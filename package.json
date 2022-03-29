@@ -28,7 +28,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/play-with-docker/sdk.git"
+    "url": "git+https://github.com/keesj/pwd-sdk.git"
   },
   "files": [
     "dist",
@@ -38,9 +38,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/play-with-docker/sdk/issues"
+    "url": "https://github.com/keesj/pwd-sdk/issues"
   },
-  "homepage": "https://github.com/play-with-docker/sdk#readme",
+  "homepage": "https://github.com/keesj/pwd-sdk#readme",
   "dependencies": {
     "reconnecting-websocket": "^3.2.2",
     "rollup-plugin-typescript2": "^0.27.1",
