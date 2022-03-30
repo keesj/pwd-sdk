@@ -279,13 +279,18 @@ class PWD extends EventEmitter {
       i.terms.forEach((t) => {
         setTimeout(() => {
           const cols = t.fitAddon.proposeDimensions().cols;
+          const dim = t.fitAddon.proposeDimensions();
           if (cols == Infinity) {
             t.resize(10, 10);
+          }
+          else{
+            t.resize(dim.cols, dim.rows);
           }
           // is visible
           if (t.element.clientWidth) {
             t.fitAddon.fit();
           }
+          this.socket.emit('instance viewport resize', dim.cols, dim.rows);
         }, 300);
       });
     });
